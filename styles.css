@@ -1,0 +1,292 @@
+universal styles html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  background-color: hsla(170, 15%, 15%, 1);
+  color: hsla(170, 15%, 95%, 1);
+}
+
+/* header section*/
+
+.banner {
+  background-image: url("/images/record.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 18.75rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 3.125rem;
+  font-weight: bold;
+  padding-left: 0.625rem;
+  color: hsla(170, 15%, 25%, 1);
+}
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: hsla(170, 15%, 5%, 1);
+  color: hsla(170, 15%, 25%, 1);
+  margin-bottom: 0;
+}
+h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-family: "Playfair Display", serif;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+/* nav*/
+
+nav {
+  font-family: "Lato", sans-serif;
+  font-size: 1.625rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  background-color: hsla(170, 15%, 5%, 1);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  position: sticky;
+}
+
+nav a {
+  color: hsla(170, 15%, 95%, 1);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: hsla(170, 15%, 25%, 1);
+}
+
+/* Mission statement*/
+
+.mission {
+  background-color: hsla(170, 15%, 5%, 1);
+  padding: 0.3125rem 0.625rem;
+}
+
+.mission h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.125rem;
+}
+
+.mission p {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+/*Recent Reviews section*/
+
+.recordContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  background-image: url("/images/record2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-bottom: 0;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.recordContainer img {
+  width: 9.375rem;
+  height: 9.375rem;
+  border: 0.09375rem solid hsla(170, 15%, 25%, 1);
+}
+
+figcaption {
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.record a {
+  color: hsla(170, 15%, 95%, 1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.record a:hover {
+  color: hsla(170, 15%, 25%, 1);
+  text-decoration: underline;
+}
+
+/*Meet the team*/
+
+.teamContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  background-image: url("/images/record.jpg");
+  background-position: right center;
+  background-size: cover;
+  padding-bottom: 2rem;
+  height: 50rem;
+  padding-top: 1rem;
+}
+
+.portraitPic {
+  width: 70%;
+  border: 0.09375rem solid hsla(170, 15%, 25%, 1);
+  padding: 0.125rem;
+}
+
+.teamMate {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.teamMate p {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+}
+
+/*footer*/
+
+.locations {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  background-color: hsla(170, 15%, 5%, 1);
+  padding-bottom: 2rem;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  margin-top: 5%;
+}
+footer {
+  background-color: hsla(170, 15%, 5%, 1);
+  padding-bottom: 2rem;
+}
+footer a {
+  font-family: "Lato", sans-serif;
+  font-size: 1.625rem;
+  color: hsla(170, 15%, 95%, 1);
+  text-decoration: none;
+}
+footer a:hover {
+  color: hsla(170, 15%, 25%, 1);
+}
+
+@media only screen and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    padding: 1rem;
+    line-height: 1.5rem;
+    position: fixed;
+    width: 86.5%;
+    font-size: 1rem;
+    margin-bottom: 0.0125rem;
+    background-color: hsla(170, 15%, 5%, 0.9);
+  }
+  h1 {
+    font-size: 2.5rem;
+    text-align: right;
+    padding-right: 0.5rem;
+    z-index: 10;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    background-color: hsla(170, 15%, 5%, 0.7);
+  }
+  .mission h2 {
+    font-size: 1.5rem;
+  }
+  .mission p {
+    font-size: 1rem;
+  }
+  .recordContainer {
+    margin-top: 0;
+    background-image: none;
+    background-color: hsla(170, 15%, 5%, 0.7);
+  }
+  .teamContainer {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  .portraitPic {
+    width: 30%;
+    padding: 0;
+  }
+  .teamSection h2 {
+    margin-top: 0.5rem;
+  }
+  .teamMate h3 {
+    font-size: 1rem;
+    line-height: 0.2rem;
+  }
+  .teamMate p {
+    font-size: 0.75rem;
+    line-height: 0.2rem;
+    padding-bottom: 1rem;
+  }
+  footer {
+    margin-top: 0.5rem;
+  }
+  .locations {
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: left;
+    padding-left: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .locations a {
+    font-size: 1rem;
+  }
+  .locations h6 {
+    font-size: 0.1rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 2rem;
+    text-align: left;
+    background-color: hsla(170, 15%, 5%, 0.9);
+  }
+  nav {
+    position: static;
+  }
+  .banner {
+    background-position: right;
+  }
+}
